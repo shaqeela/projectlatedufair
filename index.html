@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu Fair & Career Day 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="no-scroll">
+
+    <!-- Audio Latar -->
+    <audio id="bg-music" loop>
+        <source src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=corporate-inspirational-ambient-112202.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Tombol Kontrol Audio Melayang -->
+    <button id="music-toggle" class="music-btn" title="Putar / Jeda Musik" style="display: none;">
+        🔊
+    </button>
+
+    <!-- Halaman Cover (Open Invitation) -->
+    <div id="cover-overlay" class="cover-overlay">
+        <div class="cover-content">
+            <p class="label">OFFICIAL INVITATION</p>
+            <h1>EDU FAIR <span>&amp;</span><br>CAREER DAY 2026</h1>
+            <p class="theme">"Connecting Competence to Future: Bekerja, Melanjutkan, Berwirausaha"</p>
+            
+            <h2 class="nama-pengirim">Dinda Nurrahma</h2>
+            
+            <div class="line"></div>
+            
+            <p class="label">KEPADA YTH.</p>
+            <h2 id="cover-nama">Tamu Undangan</h2>
+            <button id="btn-open" class="btn-open">📩 Buka Undangan</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">EDU FAIR <span>2026</span></div>
+        <a href="#rsvp" class="nav-rsvp">RSVP</a>
+    </header>
+
+    <!-- Hero Section + Countdown -->
+    <section class="hero">
+        <p class="label">OFFICIAL INVITATION</p>
+        <h1>EDU FAIR <span>&amp;</span><br>CAREER DAY 2026</h1>
+        <p class="theme">"Connecting Competence to Future: Bekerja, Melanjutkan, Berwirausaha"</p>
+        
+        <!-- Diubah menjadi UNTUK -->
+        <p class="label" style="margin-top: 15px;">UNDANGAN KHUSUS UNTUK</p>
+        <p class="nama-pengirim">Dinda Nurrahma</p>
+
+        <div class="line"></div>
+        
+        <p class="label">KEPADA YTH.</p>
+        <h2 id="display-nama">Tamu Undangan</h2>
+
+        <!-- Countdown Timer -->
+        <div class="countdown-wrapper">
+            <p class="countdown-title">MENUJU HARI PELAKSANAAN</p>
+            <div class="countdown" id="countdown">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <small>Hari</small>
+                </div>
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <small>Jam</small>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <small>Menit</small>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <small>Detik</small>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 25px;">
+            <a href="#rsvp" class="btn">Konfirmasi Kehadiran</a>
+        </div>
+    </section>
+
+    <!-- Section Lokasi & Maps -->
+    <section class="section">
+        <p class="label">LOKASI</p>
+        <h2>Temukan Lokasi Kami</h2>
+        
+        <div class="info-box">
+            <p><strong>Tanggal:</strong> 25 November 2026</p>
+            <p><strong>Waktu:</strong> Pukul 07:30 - 15:00 WIB</p>
+            <p><strong>Tempat:</strong> Lapangan Utama SMKN 6 Tangerang Selatan</p>
+            <p><strong>Alamat:</strong> Jl. Magnolia VI No.6, Jelupang, Kec. Serpong Utara, Kota Tangerang Selatan, Banten</p>
+        </div>
+
+        <iframe
+            src="https://www.google.com/maps?q=SMKN%206%20Kota%20Tangerang%20Selatan&output=embed"
+            width="100%"
+            height="350"
+            style="border:0; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);"
+            loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- Section Rundown / Agenda -->
+    <section class="section schedule">
+        <p class="label">RUNDOWN</p>
+        <h2>Susunan Acara</h2>
+
+        <div class="agenda">
+            <p><strong>07.30 – 08.00</strong> &nbsp;|&nbsp; Registrasi &amp; Persiapan Booth Peserta</p>
+            <p><strong>08.00 – 08.45</strong> &nbsp;|&nbsp; Opening Ceremony &amp; Sambutan Kepala Sekolah</p>
+            <p><strong>08.45 – 12.00</strong> &nbsp;|&nbsp; Pameran Pendidikan, Konsultasi Kampus &amp; Bursa Kerja</p>
+            <p><strong>12.00 – 13.00</strong> &nbsp;|&nbsp; ISHOMA (Istirahat, Sholat, Makan)</p>
+            <p><strong>13.00 – 14.30</strong> &nbsp;|&nbsp; Talkshow Alumni Inspiratif &amp; Presentasi Mitra Industri</p>
+            <p><strong>14.30 – 15.00</strong> &nbsp;|&nbsp; Penutupan &amp; Penyerahan Cenderamata</p>
+        </div>
+    </section>
+
+    <!-- Section Galeri 6 Foto -->
+    <section class="section">
+        <p class="label">GALERI &amp; DOKUMENTASI</p>
+        <h2>Kilas Balik &amp; Suasana Acara</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=600&q=80" alt="Pameran Pendidikan">
+                <div class="caption">Pameran Kampus &amp; Vokasi</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=600&q=80" alt="Konsultasi Karier">
+                <div class="caption">Konsultasi Karier &amp; Rekrutmen</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=600&q=80" alt="Talkshow Inspiratif">
+                <div class="caption">Talkshow Alumni &amp; Industri</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80" alt="Antusiasme Siswa">
+                <div class="caption">Antusiasme Peserta Siswa</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=600&q=80" alt="Kemitraan Industri">
+                <div class="caption">Networking Mitra Perusahaan</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80" alt="Wirausaha Muda">
+                <div class="caption">Showcase Produk Wirausaha</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Benefit Booth -->
+    <section class="section">
+        <p class="label">FASILITAS</p>
+        <h2>Benefit Booth</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Booth Eksklusif 3x3m</h3>
+                <p>Dilengkapi partisi standar pameran, 1 meja, 2 kursi, instalasi listrik, serta akses Wi-Fi khusus peserta.</p>
+            </div>
+            <div class="card">
+                <h3>Sesi Presentasi Utama</h3>
+                <p>Kesempatan memaparkan profil kampus atau lowongan karier perusahaan selama 15 menit di panggung utama.</p>
+            </div>
+            <div class="card">
+                <h3>Konsumsi &amp; Sertifikat</h3>
+                <p>Disediakan snack pagi dan makan siang untuk 2 perwakilan booth serta piagam penghargaan resmi sekolah.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section RSVP -->
+    <section class="section rsvp" id="rsvp">
+        <h2>Konfirmasi Kehadiran</h2>
+        <p class="label" style="text-align: center;">Silahkan isi dan pilih status kehadiran anda</p>
+
+        <!-- Form dibersihkan dari action PHP, murni interaktif untuk WhatsApp -->
+        <div class="rsvp-card">
+            <label>NAMA PERWAKILAN / TAMU</label>
+            <input type="text" id="input-nama" name="nama_tamu" placeholder="Masukkan nama lengkap Anda">
+
+            <label>STATUS KEHADIRAN</label>
+            <select id="status-kehadiran" name="status_kehadiran">
+                <option value="Hadir (Membuka Booth)">Hadir (Membuka Booth)</option>
+                <option value="Hadir (Tamu Undangan)">Hadir (Tamu Undangan)</option>
+                <option value="Berhalangan Hadir">Berhalangan Hadir</option>
+            </select>
+            
+            <div style="text-align: center; margin-top: 25px;">
+                <a href="#" id="btn-wa" target="_blank" class="btn-wa">
+                    Kirim Konfirmasi via WhatsApp ke Panitia
+                </a>
+            </div>
+        </div> 
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Edu Fair &amp; Career Day - SMKN 6 Kota Tangerang Selatan. All rights reserved.</p>
+    </footer>
+
+    <!-- Script Utama -->
+    <script>
+        // 1. Tangkap Nama Tamu dari Parameter URL (?to=...)
+        const params = new URLSearchParams(window.location.search);
+        const namaTamu = params.get('to');
+        const defaultNama = namaTamu ? namaTamu : "Tamu Undangan";
+
+        document.getElementById('cover-nama').textContent = defaultNama;
+        document.getElementById('display-nama').textContent = defaultNama;
+        if (namaTamu) {
+            document.getElementById('input-nama').value = namaTamu;
+        }
+
+        // 2. Logika Cover Open Invitation & Audio
+        const btnOpen = document.getElementById('btn-open');
+        const coverOverlay = document.getElementById('cover-overlay');
+        const bgMusic = document.getElementById('bg-music');
+        const musicToggle = document.getElementById('music-toggle');
+        let isPlaying = false;
+
+        btnOpen.addEventListener('click', () => {
+            coverOverlay.classList.add('open');
+            document.body.classList.remove('no-scroll');
+            musicToggle.style.display = 'flex';
+            
+            bgMusic.play().then(() => {
+                isPlaying = true;
+                musicToggle.textContent = '🔊';
+            }).catch(() => {
+                isPlaying = false;
+                musicToggle.textContent = '🔇';
+            });
+        });
+
+        musicToggle.addEventListener('click', () => {
+            if (isPlaying) {
+                bgMusic.pause();
+                musicToggle.textContent = '🔇';
+                isPlaying = false;
+            } else {
+                bgMusic.play();
+                musicToggle.textContent = '🔊';
+                isPlaying = true;
+            }
+        });
+
+        // 3. Countdown Timer menuju 25 November 2026 pukul 07:30 WIB
+        const targetDate = new Date("November 25, 2026 07:30:00").getTime();
+
+        const updateCountdown = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            if (distance < 0) {
+                clearInterval(updateCountdown);
+                document.getElementById("countdown").innerHTML = "<p style='font-weight:bold; color:#0f2942;'>Acara Sedang Berlangsung / Telah Selesai</p>";
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").textContent = days < 10 ? "0" + days : days;
+            document.getElementById("hours").textContent = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").textContent = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").textContent = seconds < 10 ? "0" + seconds : seconds;
+        }, 1000);
+
+        // 4. Update Link WhatsApp Dinamis
+        const inputNama = document.getElementById('input-nama');
+        const statusSelect = document.getElementById('status-kehadiran');
+        const btnWa = document.getElementById('btn-wa');
+
+        function updateWaLink() {
+            const currentNama = inputNama.value.trim() ? inputNama.value.trim() : defaultNama;
+            const currentStatus = statusSelect.value;
+
+            const rawText = `Halo Panitia Edu Fair & Career Day 2026 SMKN 6 Kota Tangerang Selatan,
+
+Saya ingin mengonfirmasi kehadiran (RSVP):
+- Nama: ${currentNama}
+- Status: ${currentStatus}
+
+Terima kasih.`;
+
+            btnWa.href = `https://wa.me/6285811431544?text=${encodeURIComponent(rawText)}`;
+        }
+
+        // Jalankan saat halaman dibuka dan setiap kali form berubah
+        updateWaLink();
+        inputNama.addEventListener('input', updateWaLink);
+        statusSelect.addEventListener('change', updateWaLink);
+    </script>
+
+</body>
+</html>
